@@ -1,4 +1,3 @@
-ds = matchesWonPerTeamPerYearMethods(match);
-    // console.log("methods :: ======================");
-    // console.log(methods);
-    
+s = top10EconomicalBowlerMethods(deliveries , match);
+        console.log("Methods :: ==============");
+        console.log(methods);

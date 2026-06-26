@@ -4,22 +4,18 @@ const csvToJson = require("../utils/csvToJson")
 
 // with Methods 
 
-function getmatchesperyear(matches){
-    // console.log(matches[0]);
-
-    const result = {}
-    
-    matches.reduce((acc ,curr) =>{
+function getmatchesperyear(matches){  
+    return matches.reduce((acc ,curr) =>{
         const season = curr.season
-        if(!result[season]){
-            result[season] = 0;
+        if(!acc[season]){
+            acc[season] = 0;
         }
 
-        result[season]++;
+        acc[season]++;
 
-    } , result)    
+        return acc;
 
-    return result;
+    } , {})    
 }
 
 
